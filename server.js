@@ -1,7 +1,7 @@
+const cors = require('cors')
 const dotenv = require('dotenv')
 const express = require('express')
 const path = require('path')
-const cors = require('cors')
 
 dotenv.config()
 
@@ -22,10 +22,6 @@ app.use('/', (req, res) => {
   res.render('index.html')
 })
 
-app.use('/', function () {
-  console.log('Ending')
-})
-
 let messages = []
 
 io.on('connection', (socket) => {
@@ -39,7 +35,7 @@ io.on('connection', (socket) => {
     socket.broadcast.emit('receivedMessage', data)
   })
 })
-const { PORT } = process.env || 4500
+const { PORT } = process.env
 
 server.listen(PORT)
 
