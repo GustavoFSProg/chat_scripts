@@ -4,7 +4,11 @@
   "description": "Este programa foi feito como pratica e estudo de Node js e socket.io",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "NODE_ENV=production node server.js"
+  },
+  "engines": {
+    "node": "12.x"
   },
   "repository": {
     "type": "git",
@@ -18,6 +22,7 @@
   },
   "homepage": "https://github.com/GustavoFSProg/chat_scripts#readme",
   "dependencies": {
+    "cors": "^2.8.5",
     "ejs": "^3.1.3",
     "express": "^4.17.1",
     "socket.io": "^2.3.0"
