@@ -19,6 +19,10 @@ app.use('/', (req, res) => {
   res.render('index.html')
 })
 
+app.use('/', function () {
+  console.log('Ending')
+})
+
 let messages = []
 
 io.on('connection', (socket) => {
