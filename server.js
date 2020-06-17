@@ -1,6 +1,7 @@
 const express = require('express')
 const path = require('path')
 const cors = require('cors')
+const dotenv = required('dotenv')
 
 const app = express()
 
@@ -36,7 +37,7 @@ io.on('connection', (socket) => {
     socket.broadcast.emit('receivedMessage', data)
   })
 })
-const PORT = 3000 || 4000 || 5555 || 3160
+const PORT = process.env || 4500
 
 server.listen(PORT)
 
