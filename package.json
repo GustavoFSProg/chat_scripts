@@ -2,7 +2,7 @@
   "name": "chat_scripts",
   "version": "1.0.0",
   "description": "Este programa foi feito como pratica e estudo de Node js e socket.io",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "NODE_ENV=production node server.js"
