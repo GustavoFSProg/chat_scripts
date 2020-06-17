@@ -35,7 +35,7 @@ io.on('connection', (socket) => {
     socket.broadcast.emit('receivedMessage', data)
   })
 })
-const { PORT } = process.env
+const { PORT } = process.env || 4500 || 5000
 
 server.listen(PORT)
 
