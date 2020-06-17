@@ -39,3 +39,5 @@ io.on('connection', (socket) => {
 const PORT = 3000 || 4000 || 5555 || 3160
 
 server.listen(PORT)
+
+console.log('Running on Port: ' + PORT)
