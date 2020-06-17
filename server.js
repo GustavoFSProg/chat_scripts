@@ -29,5 +29,6 @@ io.on('connection', (socket) => {
     socket.broadcast.emit('receivedMessage', data)
   })
 })
+const PORT = 3000 || 4000
 
-server.listen(3000)
+server.listen(PORT)
