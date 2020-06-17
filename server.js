@@ -18,7 +18,7 @@ app.engine('html', require('ejs').renderFile)
 
 app.set('view engine', 'html')
 
-app.use('/', (req, res) => {
+app.get('/', (req, res) => {
   res.render('public/index.html')
 })
 
